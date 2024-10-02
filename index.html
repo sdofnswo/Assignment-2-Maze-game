@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Welcome to the Maze Game, <span id="userName"></span>!</h1>
+    <div>
+        <button id="toggleMode">Switch to Dark Mode</button>
+        <div>Times Played: <span id="timesPlayed">0</span></div>
+        <div>Time: <span id="timer">00:00</span></div>
+    </div>
+    
+    <canvas id="mazeCanvas" width="500" height="500"></canvas>
+    
+    <!-- Modal for results -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <!-- Input name -->
+    <div id="nameInputModal" class="modal">
+        <div class="modal-content">
+            <p>Enter your name:</p>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button id="saveName">Save</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
